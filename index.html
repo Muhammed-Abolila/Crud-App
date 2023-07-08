@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crud system</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputs">
+            <input class="form-control" id="productName" placeholder="Enter Product Name" type="text" />
+            <input class="form-control" id="productCategory" placeholder="Enter Product Category" type="text" />
+            <div class="price">
+                <input type="number" onkeyup="getTotal()" id="price" placeholder="Price">
+                <input type="number" onkeyup="getTotal()" id="taxes" placeholder="taxes">
+                <input type="number" onkeyup="getTotal()" id="ads" placeholder="ads">
+                <input type="number" onkeyup="getTotal()" id="discount" placeholder="discount">
+                <span class="total" id="total"></span>
+            </div>
+            <input class="form-control" id="countInput" placeholder="Count" type="number" />
+            <input class="form-control" id="productDiscription" placeholder="Discription" type="text" />
+            <button class="btn" id="btn">Add Product</button>
+        </div>
+        <div class=" outputs">
+            <input id="serchInput" onkeyup="searchProduct()" class="form-control" placeholder="Search... " type="text ">
+            <table class="table">
+                <thead>
+                    <td>#</td>
+                    <td>Name</td>
+                    <td>Category</td>
+                    <td>Price</td>
+                    <td>Taxes</td>
+                    <td>Ads</td>
+                    <td>Discount</td>
+                    <td>Total</td>
+                    <td>Discription</td>
+                    <td>Delete</td>
+                    <td>Update</td>
+                </thead>
+                <tbody id="demo">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

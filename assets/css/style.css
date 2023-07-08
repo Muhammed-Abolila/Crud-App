@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #57a2a8;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container .inputs {
+    background-color: #152323;
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px 0px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.container .outputs .form-control,
+.container .inputs .form-control {
+    width: 90%;
+    padding: 8px 4px;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 4px
+}
+
+.container .inputs .price {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .inputs .price input {
+    padding: 8px 4px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 4px
+}
+
+.container .inputs .price .total {
+    padding: 8px 4px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e31313;
+    font-size: 1.2rem
+}
+
+.container .inputs .price .total::before {
+    content: "total: ";
+}
+
+.container .inputs .btn {
+    width: 90%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    background-color: #57a2a8;
+    color: #fff;
+    border-radius: 4px
+}
+
+.container .outputs {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.container .outputs .form-control {
+    margin-bottom: 20px;
+}
+
+.container .outputs .table {
+    width: 100%;
+    margin: auto;
+}
+
+.btnDelete {
+    background-color: #e31313;
+    padding: 8px 13px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+}
+
+.btnUpdate {
+    background-color: #066289;
+    padding: 8px 13px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+}
