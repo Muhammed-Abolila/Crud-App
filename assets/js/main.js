@@ -127,6 +127,7 @@ function updateProduct(param) {
     ads.value = products[param].ads;
     discount.value = products[param].discount;
     total.innerHTML = products[param].total;
+    countInput.style.display = "none"
     productDiscription.value = products[param].discription;
     btn.innerHTML = "Update";
     if (total.innerHTML == '') {
